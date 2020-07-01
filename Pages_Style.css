@@ -1,0 +1,37 @@
+.title
+{
+	background-color: DarkOrange;
+	border-bottom: 10px solid RoyalBlue;
+	font-size: 50px;
+	color: black;
+}
+
+.hwTitle
+{
+	font-size: 25px;
+}
+
+.hwSubTitle
+{
+	font-size: 20px;
+}
+
+.codeBox
+{
+	background-color: HoneyDew;
+}
+
+.code
+{
+	text-indent: 10px;
+}
+
+.red
+{
+	color: red;
+}
+
+.blue
+{
+	color: blue;
+}
