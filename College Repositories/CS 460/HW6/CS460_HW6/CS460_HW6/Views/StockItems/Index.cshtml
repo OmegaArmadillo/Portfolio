@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CS460_HW6.Models.StockItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div>
+    <div class="col-sm-4">
+
+    </div>
+<h2>Item Search</h2>
+</div>
+
+<div class="row">
+
+<div class="col-sm-3" >
+    
+</div>
+
+
+<form method="post">
+    <!--https://stackoverflow.com/questions/596444/html-actionlink-as-a-button-or-an-image-not-a-link-->
+    <input type="search" placeholder="search" name="searchInput" class="searchBar">
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+
+</div>
+<table class="table">
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.StockItemName)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.StockItemID}, htmlAttributes: new {@class="btn btn-primary" , @role="button" })
+            
+            
+        </td>
+    </tr>
+}
+
+</table>

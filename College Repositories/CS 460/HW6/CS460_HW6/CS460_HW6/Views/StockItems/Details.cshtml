@@ -1,0 +1,273 @@
+﻿@model CS460_HW6.Models.ViewModels.ProductDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Product Details</h2>
+
+<div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="@Url.Content("~/Images/Question Mark.jpg")" style="width: 200px; height:200px">
+        </div>
+
+        <div class="col-sm-8">
+            <div class="row title">
+                @Html.DisplayFor(model => model.StockItemName)
+            </div>
+
+
+            <table>
+                <!--2-->
+                <tr>
+                    <th>
+                        Size:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.Size)
+                    </td>
+                </tr>
+
+                <!--3-->
+                <tr>
+                    <th>
+                        Retail Price:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.RecommendedRetailPrice)
+                    </td>
+                </tr>
+
+                <!--4-->
+                <tr>
+                    <th>
+                        Weight Per Unit:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.TypicalWeightPerUnit)
+                    </td>
+                </tr>
+
+                <!--5-->
+                <tr>
+                    <th>
+                        Lead Time Days:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.LeadTimeDays) days
+                    </td>
+                </tr>
+
+                <!--6-->
+                <tr>
+                    <th>
+                        Valid From:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.ValidFrom)
+                    </td>
+                </tr>
+
+                <!--7-->
+                <tr>
+                    <th>
+                        Origin:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.CustomFields)
+                    </td>
+                </tr>
+
+                <!---->
+                <tr>
+                    <th>
+                        Tags:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.Tags)
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+    </div>
+
+    <hr />
+
+
+
+    <div class="row">
+
+        <div class="col-sm-6">
+
+            <div class="row title">
+                Supplier Information
+            </div>
+
+
+            <table>
+                <!--1-->
+                <tr>
+                    <th>
+                        Supplier Name:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.SupplierName)
+                    </td>
+                </tr>
+
+                <!--2-->
+                <tr>
+                    <th>
+                        Phone Number:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.SupplierPhoneNumber)
+                    </td>
+                </tr>
+
+                <!--3-->
+                <tr>
+                    <th>
+                        Fax Number:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.SupplierFaxNumber)
+                    </td>
+                </tr>
+
+                <!--4-->
+                <tr>
+                    <th>
+                        Website:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.SupplierWebsiteURL)
+                    </td>
+                </tr>
+
+                <!--5-->
+                <tr>
+                    <th>
+                        Contact:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.SupplierContactFullName)
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </div>
+
+
+
+        <div class="col-sm-4">
+            <div class="row title">
+                Order History
+            </div>
+
+            <table>
+                <!--1-->
+                <tr>
+                    <th>
+                        Total Orders:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.TotalOrders)
+                    </td>
+                </tr>
+
+                <!--2-->
+                <tr>
+                    <th>
+                        Gross Sales:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.GrossSales)
+                    </td>
+                </tr>
+
+                <!--3-->
+                <tr>
+                    <th>
+                        Gross Profit:
+                    </th>
+
+                    <td>
+                        @Html.DisplayFor(model => model.GrossProfit)
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    <hr />
+
+
+
+
+    <div class="title">Top 10 Buyers and Quantity Ordered</div>
+    <div class="row">
+
+        <div class="col-sm-3">
+
+
+            <div class="title">Buyer</div>
+        
+
+            @foreach (var group in Model.BuyerNames)
+            {
+                <p>
+                    @group
+                </p>
+                
+            }
+
+        </div>
+
+        <div class="col-sm-1">
+
+            <div class="title">Quantity</div>
+          
+
+            @foreach (var group in Model.BuyerAmount)
+            {
+                <p>
+                    @group
+                </p>
+                
+            }
+
+        </div>
+    </div>
+</div>      
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
