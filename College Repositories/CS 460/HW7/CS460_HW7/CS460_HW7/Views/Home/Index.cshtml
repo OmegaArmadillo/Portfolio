@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <link rel="stylesheet" href="../../Scripts/HW7.css">
+
+    <div class="container" style="background-color:lightgray">
+        <div class="row" id="profileArea">
+            <div class="col-sm-4">
+                <img src=@ViewBag.ProfilePic>
+
+            </div>
+
+            <div class="col-sm-4">
+                <div class="row">
+                    <a href="@ViewBag.ProfileLink">@ViewBag.Name</a>
+                </div>
+
+                <div class="row">
+                    @ViewBag.Login
+                </div>
+
+                <div class="row">
+                    @ViewBag.Company
+                </div>
+
+                <div class="row">
+                    @ViewBag.Location
+                </div>
+
+                <div class="row">
+                    @ViewBag.EMail
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row title">
+            <div class="col-sm-3">
+            </div>
+            List of Repositories
+        </div>
+
+
+        <div class="row" id="repoArea">
+
+
+            @for (int i = ViewBag.count - 1; i >= 0; i--)
+            {
+                
+
+                    <div class="col-sm-3 repoBox">
+
+                        <div class="row" style="font-size:20px">
+                            <a href="@ViewBag.repoUrl[i]">@ViewBag.repoName[i]</a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-5">
+
+                                <div class="row">
+                                    @ViewBag.repoOwner[i]
+                                </div>
+                                <div class="row">
+                                    Last updated on @ViewBag.repoLastUpdated[i]
+                                </div>
+
+                                <div class="row">
+                                    <button class="btn" onclick="getRepoCommits('@ViewBag.repoOwner[i]', '@ViewBag.repoName[i]')">Show Commits</button>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-4">
+                                <img src=@ViewBag.repoOwnerPic[i] class="repoPic">
+                            </div>
+                        </div>
+
+                    </div>
+
+                
+            }
+        </div>
+
+
+
+                <div class="row title">
+                    <div class="col-sm-4">
+                    </div>
+                    Commit Data
+                </div>
+
+
+                <div class="row" id="commitArea">
+
+                </div>
+
+
+                @section scripts
+                {
+                    <script src="~/Scripts/GitScripts.js"></script>
+                }
+
+            </div>
