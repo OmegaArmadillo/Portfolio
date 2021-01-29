@@ -1,0 +1,83 @@
+*
+{
+	font-family: "Palatino"
+}
+
+
+a:visited 
+{
+  color: white;
+}
+
+.titleArea
+{
+	color: white;
+	background-color: MediumBlue;
+	font-size: 50px;
+}
+
+.navMenu
+{
+	text-align: center;
+	color: white;
+	background-color: GoldenRod;
+	height: 40px;
+
+}
+
+.navMenuListItem
+{
+	font-size: 20px;
+}
+
+.centerImage
+{
+
+	width: 100%;
+	
+}
+
+.ratesTable
+{
+	font-size: 30px;
+	width: 50%;
+	border-collapse: collapse;
+	margin:0 auto;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+}
+
+.sightsImage
+{
+	width:90%;	
+}
+
+.sightsNav
+{
+	font-size: 30px;	
+
+}
+
+.infoBox
+{
+	background-color: MediumBlue;
+	font-size: 30px;
+	color: white;
+	border: 5px solid GoldenRod;
+	
+}
+
+.ratesBackground
+{
+	background-image: url('../Images/ratesBackground.jpg');
+
+}
+
+.sightsBackground
+{
+	background-image: url('../Images/sightsBackground.jpg');
+
+}
