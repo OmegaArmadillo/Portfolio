@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- My own CSS-->
+	<link rel="stylesheet" type="text/css" href="CSS\HW2_Style.css">
+
+    <title>Vector Calculator</title>
+  </head>
+  <body class=" pageBackground">
+  
+	<!-- top of the page -->
+	<div class="container-fluid">
+    <h1>Vector Calculator</h1>
+	</div>
+	
+	<!-- bar under the title -->
+	<div class="container-fluid navBar">
+	The best calculator for vector calculation.
+	</div>
+	
+	<br>
+	
+	<!-- center of the page with the information and form-->
+	<div class="container-fluid">
+	
+		<div class="container pageCenter">
+	
+		<div class="col">
+			
+			<!-- the description of the website -->
+			<div class="row">
+			This calculator allows you to input vectors and calculate either the dot product or cross product for those vectors.
+			To select 2D or 3D vectors slect from the Vector Dimension buttons. 
+			To calculate the Dot or Cross Product select form the Equation buttons.
+			Input the x, y, and z values for each vector into the correct areas.
+			Then press the calculate button to calculate the selected equaiton.
+			Below the button the step-by-step calculations will be shown.
+			<br>Dot Product: U*V=U1V1+U2V2+U3V3
+			<br>Cross Product: UxV=(UyVz − UzVy),(UzVx − UxVz),( UxVy − UyVx)
+			</div>
+			<br>
+			
+			<!-- the form for the information-->
+			<form id="dotProduct">
+		
+				<!-- label for the dimension input-->
+				<div class="row justify-content-center">
+					Vector Dimension
+				</div>
+				
+				<!-- dimension input-->
+				<div class="row justify-content-center" >
+					2D<input type="radio" name="dimension" id="dimension1" value="2" >
+					3D<input type="radio" name="dimension" id="dimension2" value="3" checked >
+				</div>
+				
+				<!-- label fo the equation input-->
+				<div class="row justify-content-center">
+					Equation
+				</div>
+				
+				<!-- equation input-->
+				<div class="row justify-content-center">
+					Dot<input type="radio" name="equation" id="equation1" value="dot" checked >
+					Cross<input type="radio" name="equation" id="equation2" value="cross"  >
+				</div>
+				
+				<!-- label for the U vector inputs -->
+				<div class="row justify-content-center">
+					U vector values
+				</div>
+		
+				<!-- text fields for the U vector -->
+				<div class="row justify-content-center">
+					<input type="text" id="uX" placeholder="X">
+	
+					<input type="text" id="uY" placeholder="Y">
+	
+					<input type="text" id="uZ" placeholder="Z">
+				</div>
+	
+				<!-- label for the V vector inputs-->
+				<div class="row justify-content-center">
+					V vector values
+				</div>
+	
+				<!-- inputs for the V vector values -->
+				<div class="row justify-content-center">
+					<input type="text" id="vX" placeholder="X">
+	
+					<input type="text" id="vY" placeholder="Y">
+	
+					<input type="text" id="vZ" placeholder="Z">
+				</div>
+	
+				<br>
+				
+				<!-- the submit button for the form -->
+				<div class="row justify-content-center">
+				<button type="submit" class="button">Calculate</button>
+				</div>
+	
+			</form>
+	
+		</div>
+		
+		<div class="row justify-content-center">
+		
+			<!-- the area the error and success messages appear-->
+			<div id="message">
+			</div>
+		
+		</div>
+	
+		<div class="row justify-content-center">
+			<!-- the area that the answers appear-->
+			<div id="answer">
+			
+			</div>
+		</div>
+	
+		</div>
+	
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+	<!-- My JavaScript-->
+	<script src="JavaScript\HW2_Script.js"></script>
+  </body>
+</html>

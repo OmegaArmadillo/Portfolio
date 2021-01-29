@@ -1,0 +1,26 @@
+*
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.pageBackground
+{
+	background-color:orchid;
+}
+
+.pageCenter
+{
+	background-color:FloralWhite;
+}
+
+.navBar
+{
+	background-color:FloralWhite;
+}
+
+.button
+{
+	background-color:orchid;
+	border: 5px solid FloralWhite;
+	border-radius: 12px;
+}
