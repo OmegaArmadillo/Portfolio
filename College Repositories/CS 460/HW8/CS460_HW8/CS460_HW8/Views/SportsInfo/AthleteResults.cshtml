@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "AthleteResults";
+}
+
+<div class="row">
+
+    <div class="col-sm-5">
+    </div>
+
+    <div class="col-sm-6"><h2>@ViewBag.name</h2></div>
+</div>
+
+
+<div class="row">
+    
+    <div class="col-sm-2">
+    </div>
+
+    <div class="col-sm-2">
+        <div class="row">
+            Date
+            <hr>
+        </div>
+        @foreach (DateTime date in ViewBag.dates)
+        {
+          <div class="row">  @date </div>
+            <hr>
+        }
+    </div>
+
+    <div class="col-sm-1">
+        <div class="row">
+            Event
+            <hr>
+        </div>
+        @foreach (String eventName in ViewBag.events)
+        {
+            <div class="row">  @eventName </div>
+            <hr>
+        }
+    </div>
+
+    <div class="col-sm-3">
+        <div class="row">
+            Location
+            <hr>
+        </div>
+        @foreach (String location in ViewBag.locations)
+        {
+            <div class="row">  @location </div>
+            <hr>
+        }
+    </div>
+
+    <div class="col-sm-3">
+        <div class="row">
+            Time
+            <hr>
+        </div>
+        @foreach (float time in ViewBag.raceTimes)
+        {
+            <div class="row">  @time </div>
+            <hr>
+        }
+    </div>
+</div>
+
+
+
