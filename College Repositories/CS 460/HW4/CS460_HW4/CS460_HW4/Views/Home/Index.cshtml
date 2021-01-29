@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>CS460 HW4</h1>
+    <p class="lead">Homework focusing on get, post, and razor.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>RGB Color Creator</h2>
+        <p>
+            Create a color by inputting red, green, and blue values and see the color and is hex value.
+        </p>
+        <p class=" btn btn-default">@Html.ActionLink("RBG Color", "RGBColor", "Home")</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Color Interpolator</h2>
+        <p>Input two hex values for colors and see the interplation of them.</p>
+        <p class=" btn btn-default">@Html.ActionLink("Color Interpolator", "ColorInterpolator", "Home")</p>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h2> Interpolate from one color to another</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="row">
+                    Please enter colors in HTML Hexadecimal format: #AABBCC
+                </div>
+                @using (Html.BeginForm("ColorInterpolator"  + "/Create", "Home", FormMethod.Post))
+                {
+                    <label for=" FirstColor">First Color</label><br>
+                    @Html.TextBox("FirstColor", null, new { @class = "", required="required"})<br>
+                    <label for=" SecondColor">Second Color</label><br>
+                    @Html.TextBox("SecondColor", null, new { @class = "", required="required"})<br>
+                    <label for=" ColorAmount">Number of Rows</label><br>
+                    @Html.TextBox("ColorAmount", null, new { @class = "", type = "number", value = "2", min = "2", step = "1", required="required"})<br><br>
+                    <input type="submit" class="btn btn-default" value="generate colors">
+                    @ViewBag.error;
+
+                }
+            </div>
+
+            <div class="col-sm-6">
+                <table>
+
+
+                    @{
+                        if(ViewBag.Finish == true)
+                        { <tr>
+                         <th>HTML</th>
+                         <th>Color</th>
+                         </tr>
+                        }
+
+
+                        for (var i = 0; i < @ViewBag.amount; i++)
+                        {
+                            <tr>
+                                <td>@ViewBag.colors[i]</td>
+                                <td style="background-color:@ViewBag.colors[i]">  </td>
+                            </tr>
+                        }
+                    }
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

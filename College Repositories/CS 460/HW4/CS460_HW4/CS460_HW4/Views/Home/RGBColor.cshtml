@@ -1,0 +1,48 @@
+﻿@{
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+    Enter a RGB color and see what it looks like
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <!-- https://stackoverflow.com/questions/8356506/how-to-write-html-beginform-in-razor -->
+            <div class="col-sm-6">
+                @using (Html.BeginForm("CreateColor", "Home", FormMethod.Get))
+                {
+                    <fieldset>
+                        <p class=" btn btn-default">
+                         R</p><input type="number" class="long" value="0" min="0" max="255" step="1" name="Red" required><br>
+                            
+                        <p class=" btn btn-default">
+                        G</p><input type="number" class="long" value="0" min="0" max="255" step="1" name="Green" required><br>
+                            
+                        <p class=" btn btn-default">
+                         B</p><input type="number" class="long" value="0" min="0" max="255" step="1" name="Blue" required><br>
+                            <input type="submit" class="btn btn-default ">
+                    </fieldset> 
+                }
+            </div>
+
+            <div class="col-sm-6">
+                <div class="square" style="background-color:@ViewBag.Color;">
+
+                </div>
+                @ViewBag.Color
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
