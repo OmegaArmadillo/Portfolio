@@ -1,0 +1,19 @@
+Test 2, human, cleric, 3, good
+Stats
+Strength 14
+Dexterity 9
+Constitution 3
+Intelligence 17
+Wisdom 17
+Charisma 2
+Inventory
+1: nothing
+2: nothing
+3: nothing
+4: nothing
+5: nothing
+6: nothing
+7: nothing
+8: nothing
+9: nothing
+10: nothing
