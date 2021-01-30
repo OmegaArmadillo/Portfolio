@@ -5,3 +5,7 @@ These are the folders for some of my various college projects below is a list wh
 407 (Andorid Development) : Includes my Android apps done in Kotlin which also includes the use of APIs
 
 460 (Web Development) : Includes C#, ASP.NET, Javascript, JQuery, Bootstrap, and SQL 
+
+Introduction to C : Includes various projects done in C
+
+Introduction to Java : Includes various projects done in Java
