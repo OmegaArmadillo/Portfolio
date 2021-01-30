@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="77dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/searchGameDescription"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/searchSuccessTextArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        tools:text="searchSuccessTextArea" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="74dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+        <Button
+            android:id="@+id/searchButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:background="#85FF1C"
+            tools:text="1" />
+
+        <Button
+            android:id="@+id/searchButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="#85FF1C"
+            tools:text="2" />
+
+        <Button
+            android:id="@+id/searchButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="#85FF1C"
+            tools:text="3" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="79dp">
+
+        <Button
+            android:id="@+id/searchButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75sp"
+            android:background="#85FF1C"
+            tools:text="4" />
+
+        <Button
+            android:id="@+id/searchButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="#85FF1C"
+            tools:text="5" />
+
+        <Button
+            android:id="@+id/searchButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="#85FF1C"
+            tools:text="6" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/searchButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75sp"
+            android:background="#85FF1C"
+            tools:text="7" />
+
+        <Button
+            android:id="@+id/searchButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="#85FF1C"
+            tools:text="8" />
+
+        <Button
+            android:id="@+id/searchButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="#85FF1C"
+            tools:text="9" />
+    </TableRow>
+</LinearLayout>

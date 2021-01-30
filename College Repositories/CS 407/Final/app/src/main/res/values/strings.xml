@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Switch</string>
+    <string name="mainActivityStartText">Start Game</string>
+    <string name="mainActivityLeaderboardText">Leaderboard</string>
+    <string name="mainActivityDifficultyText">Select your Difficulty.</string>
+
+    <string name="leaderboardActivityButton">Return to Main Menu.</string>
+
+    <string name="gameSuccess">Success</string>
+    <string name="gameFailure">Failure</string>
+    <string name="name">Name</string>
+    <string name="rounds">Rounds</string>
+    <string name="difficulty">Difficulty</string>
+
+    <string name="transitionFailureText">Game Lost</string>
+    <string name="transitionSuccessText">Game Won</string>
+    <string name="transitionLossesLeft">Attempts Remaining</string>
+
+    <string name="gameOverLostText">Game Over</string>
+    <string name="gameOverRoundsWon">Rounds Won</string>
+    <string name="gameOverMenuReturn">Return to Main Menu.</string>
+    <string name="gameOverNameEnter">Enter your name.</string>
+    <string name="gameOverNameHint">Your Name Here</string>
+
+    <string name="hammerGameDescription">Hit the Button!</string>
+    <string name="hammerHitsRemaining">Hits Remaining</string>
+
+    <string name="mathGameDescription">Solve the Problem!</string>
+    <string name="mathGameAdd">+</string>
+    <string name="mathGameSubtract">-</string>
+
+    <string name="searchGameDescription">Find the correct button!</string>
+
+    <string-array name="numbers">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="difficulty">
+
+        <item>Normal</item>
+        <item>Easy</item>
+        <item>Hard</item>
+
+    </string-array>
+</resources>

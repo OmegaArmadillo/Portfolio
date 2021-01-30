@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/leaderboardActivityButton" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/roundText"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="@string/rounds"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/difficultyTest"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="@string/difficulty"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/leaderboardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

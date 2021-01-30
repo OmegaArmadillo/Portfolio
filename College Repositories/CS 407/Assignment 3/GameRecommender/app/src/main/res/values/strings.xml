@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Game Recommender</string>
+    <string name="error_fetch_games">Error getting information.</string>
+    <string name="description">Tap on a picture to see details for the game.</string>
+    <string name="addedLine">This many people have added this game to their library.</string>
+    <string name="suggestedLine">This many people suggest playing the game.</string>
+</resources>

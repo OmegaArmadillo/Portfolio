@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/gameOverText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gameOverLostText"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+
+    <TextView
+        android:id="@+id/roundsWonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gameOverRoundsWon"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/roundsWonTextView"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        tools:text="10" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="33dp" />
+
+    <TextView
+        android:id="@+id/resultNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gameOverNameEnter"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/resultNameTextEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/gameOverNameHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="59dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/gameOverMenuReturn" />
+</LinearLayout>

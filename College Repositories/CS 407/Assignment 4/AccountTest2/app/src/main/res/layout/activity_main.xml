@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/accountName"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Login/Change" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to list of your liked content." />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="List of results. Tap a result to like."
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/leaderboardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

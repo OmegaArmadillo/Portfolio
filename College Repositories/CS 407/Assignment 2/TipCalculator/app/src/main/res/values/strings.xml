@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="totalHint">Total</string>
+    <string name="tipHint">Tip Percentage</string>
+    <string name="peopleHint">Number of People</string>
+    <string name="buttonText">Calculate</string>
+
+    <string name="amountErrorText">You must have a value for total.</string>
+    <string name="tipErrorText">You must have a value for tip.</string>
+    <string name="peopleErrorText">You must have a value for people.</string>
+
+    <string name="totalText">Total + Tip:</string>
+    <string name="tipText">Tip Amount:</string>
+    <string name="amountText">Amount Per Person:</string>
+
+    <string-array name="digits">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+</resources>

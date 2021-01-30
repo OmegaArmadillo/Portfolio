@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/errorBox"
+                android:layout_width="246dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="85dp" />
+
+            <EditText
+                android:id="@+id/totalBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginEnd="28dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/totalHint"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/tipTitleBox"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:text="@string/tipHint"
+                android:textSize="18sp"
+                tools:text="@string/tipHint" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/firstDigitSpinner"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="110dp"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:id="@+id/secondDigitSpinner"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/progressBox"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:textSize="18sp"
+                tools:text="@string/peopleHint" />
+
+            <SeekBar
+                android:id="@+id/peopleBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:max="20" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:text="@string/buttonText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
